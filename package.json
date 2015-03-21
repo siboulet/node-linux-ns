@@ -1,0 +1,22 @@
+{
+  "name": "linux-ns",
+  "version": "0.1.0",
+  "description" : "Node.js module for Linux namespaces",
+  "author" : "Simon Boulet <simon@nostalgeek.com>",
+    "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/siboulet/node-linux-ns"
+  },
+  "dependencies" : {
+    "bindings": "*",
+    "nan": "*",
+    "node-gyp": ">0.10.0"
+  },
+  "devDependencies" : {
+    "nodeunit": "*"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "node_modules/.bin/nodeunit test/*"
+  }
+}
